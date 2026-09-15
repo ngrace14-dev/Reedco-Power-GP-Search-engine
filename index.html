@@ -136,7 +136,7 @@
               <i data-lucide="upload-cloud" class="w-5 h-5"></i>
             </div>
             <h4 class="text-xs sm:text-sm font-semibold text-slate-800">Drop GP CSV exports here or click to browse</h4>
-            <p class="text-[11px] text-slate-500 mt-1 max-w-md">Automatically maps: <code class="text-slate-700 bg-slate-100 px-1 py-0.5 rounded">Department</code>, <code class="text-slate-700 bg-slate-100 px-1 py-0.5 rounded">Journal Entry</code>, <code class="text-slate-700 bg-slate-100 px-1 py-0.5 rounded">Invoice Number</code>, <code class="text-slate-700 bg-slate-100 px-1 py-0.5 rounded">Originating Master Name</code>, <code class="text-slate-700 bg-slate-100 px-1 py-0.5 rounded">TRX Date</code>, <code class="text-slate-700 bg-slate-100 px-1 py-0.5 rounded">Debit/Credit</code>, etc.</p>
+            <p class="text-[11px] text-slate-500 mt-1 max-w-md">Automatically maps: <code class="text-slate-700 bg-slate-100 px-1 py-0.5 rounded">Department</code>, <code class="text-slate-700 bg-slate-100 px-1 py-0.5 rounded">Journal Entry</code>, <code class="text-slate-700 bg-slate-100 px-1 py-0.5 rounded">Invoice Number</code>, <code class="text-slate-700 bg-slate-100 px-1 py-0.5 rounded">Originating Master Name</code>, <code class="text-slate-700 bg-slate-100 px-1 py-0.5 rounded">TRX Date</code>, etc.</p>
           </div>
         </div>
 
@@ -317,67 +317,7 @@
 
           <div>
             <label class="block font-semibold text-slate-700 mb-1">Originating Master Name</label>
-            <input type="text" data-field="Originating Master Name" class="multi-field-input w-full p-2 border border-slate-200 rounded bg-white focus:ring-1 focus:ring-gp-500 text-xs font-mono" placeholder="e.g. Apex, Deloitte, Titan" />
-          </div>
-          <div class="sm:col-span-8">
-            <label class="block text-xs font-semibold text-slate-600 mb-1">Target Query Value</label>
-            <div class="relative">
-              <input 
-                type="text" 
-                id="single-field-target-value" 
-                placeholder="Enter exact or partial value to search this column..." 
-                class="w-full px-3 py-2 bg-white border border-slate-300 rounded-lg text-xs font-mono focus:ring-2 focus:ring-gp-500 focus:outline-none"
-              />
-              <button id="btn-apply-single" class="absolute right-1 top-1 bottom-1 px-3 bg-gp-600 hover:bg-gp-500 text-white rounded text-xs font-medium">
-                Search
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SECTION 3: Multi-Field Search Matrix -->
-      <div id="container-multi-search" class="hidden space-y-4 bg-slate-50 p-4 rounded-lg border border-slate-200">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-          <div>
-            <span class="text-xs font-bold text-slate-800">Combinatorial Multi-Field Search Matrix</span>
-            <p class="text-[11px] text-slate-500">Filter simultaneously across all 12 Power GP General Ledger columns</p>
-          </div>
-          <div class="flex items-center gap-3">
-            <div class="flex items-center gap-1.5 text-xs text-slate-700 bg-white px-2 py-1 rounded border border-slate-200">
-              <label class="font-medium">Logic Mode:</label>
-              <label class="inline-flex items-center gap-1 cursor-pointer">
-                <input type="radio" name="multi-logic" value="AND" checked class="text-gp-600">
-                <span class="font-semibold text-slate-800">Match ALL (AND)</span>
-              </label>
-              <span class="text-slate-300">|</span>
-              <label class="inline-flex items-center gap-1 cursor-pointer">
-                <input type="radio" name="multi-logic" value="OR" class="text-gp-600">
-                <span class="font-semibold text-slate-800">Match ANY (OR)</span>
-              </label>
-            </div>
-            <button id="btn-reset-multi" class="px-2.5 py-1 text-xs text-slate-600 hover:text-slate-900 border border-slate-200 rounded bg-white hover:bg-slate-100">
-              Reset Fields
-            </button>
-          </div>
-        </div>
-
-        <!-- 12 Standard Power GP General Ledger Fields Input Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 text-xs">
-          
-          <div>
-            <label class="block font-semibold text-slate-700 mb-1">Department</label>
-            <input type="text" data-field="Department" class="multi-field-input w-full p-2 border border-slate-200 rounded bg-white focus:ring-1 focus:ring-gp-500 text-xs font-mono" placeholder="e.g. Sales, Admin, 100" />
-          </div>
-
-          <div>
-            <label class="block font-semibold text-slate-700 mb-1">Journal Entry</label>
-            <input type="text" data-field="Journal Entry" class="multi-field-input w-full p-2 border border-slate-200 rounded bg-white focus:ring-1 focus:ring-gp-500 text-xs font-mono" placeholder="e.g. 10012, JE-0091" />
-          </div>
-
-          <div>
-            <label class="block font-semibold text-slate-700 mb-1">Originating Master Name</label>
-            <input type="text" data-field="Originating Master Name" class="multi-field-input w-full p-2 border border-slate-200 rounded bg-white focus:ring-1 focus:ring-gp-500 text-xs font-mono" placeholder="e.g. Contoso, Fabrikam" />
+            <input type="text" data-field="Originating Master Name" class="multi-field-input w-full p-2 border border-slate-200 rounded bg-white focus:ring-1 focus:ring-gp-500 text-xs font-mono" placeholder="e.g. Apex, Deloitte" />
           </div>
 
           <div>
@@ -468,7 +408,7 @@
               <th class="py-2.5 px-3">Location / Plant</th>
               <th class="py-2.5 px-3">Department</th>
               <th class="py-2.5 px-3">Journal Entry</th>
-              <th class="py-2.5 px-3">Invoice Number</th>
+              <th class="py-2.5 px-3 text-sky-700">Invoice Number</th>
               <th class="py-2.5 px-3">Originating Master Name</th>
               <th class="py-2.5 px-3">TRX Date</th>
               <th class="py-2.5 px-3">Account Number</th>
@@ -519,7 +459,7 @@
           </div>
           <div>
             <h3 class="text-base font-bold text-slate-900" id="modal-title">Power GP General Ledger Entry</h3>
-            <p class="text-xs text-slate-500" id="modal-subtitle">Details across the 12 primary Dynamics GP technical fields</p>
+            <p class="text-xs text-slate-500" id="modal-subtitle">Details across the 13 primary Dynamics GP technical fields</p>
           </div>
         </div>
         <button id="btn-close-modal" class="text-slate-400 hover:text-slate-600 p-1.5 rounded-lg hover:bg-slate-200 transition">
@@ -539,7 +479,51 @@
           <div class="flex items-center justify-between mb-2">
             <h4 class="text-xs font-bold text-slate-600 uppercase tracking-wider">Raw Record Payload</h4>
             <button id="btn-copy-record-json" class="text-xs text-gp-600 hover:text-gp-700 inline-flex items-center gap-1">
-    // Standardized 13 Power GP Columns from User's Schema
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy JSON
+            </button>
+          </div>
+          <pre id="modal-raw-json" class="bg-slate-900 text-slate-300 p-4 rounded-lg text-[11px] font-mono overflow-x-auto"></pre>
+        </div>
+      </div>
+
+      <div class="px-6 py-4 border-t border-slate-100 bg-slate-50 flex justify-end">
+        <button id="btn-modal-dismiss" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-800 rounded-lg text-sm font-semibold transition">
+          Close Inspector
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+    import { getFirestore, doc, setDoc, onSnapshot, collection, getDocs } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+    let app, db, auth, currentUser;
+    const appId = typeof __app_id !== 'undefined' ? __app_id : 'power-gp-search-default';
+
+    // 17 Provided Corporate Entities
+    window.COMPANY_ENTITIES = [
+      { code: 'E01', name: 'POMCO E01', short: 'POMCO' },
+      { code: 'E02', name: 'RRCLLC E02', short: 'RRCLLC' },
+      { code: 'E03', name: 'RRCSCO E03', short: 'RRCSCO' },
+      { code: 'E04', name: 'RRDLLC E04', short: 'RRDLLC' },
+      { code: 'E05', name: 'RREDCO E05', short: 'RREDCO' },
+      { code: 'E06', name: 'RRELLC E06', short: 'RRELLC' },
+      { code: 'E07', name: 'RREVMCO E07', short: 'RREVMCO' },
+      { code: 'E08', name: 'RRH2ECO E08', short: 'RRH2ECO' },
+      { code: 'E09', name: 'RRICO E09', short: 'RRICO' },
+      { code: 'E10', name: 'RRKOLLC E10', short: 'RRKOLLC' },
+      { code: 'E11', name: 'RRSDLLC E11', short: 'RRSDLLC' },
+      { code: 'E12', name: 'RRSDRBLLC E12', short: 'RRSDRBLLC' },
+      { code: 'E13', name: 'RRUCO E13', short: 'RRUCO' },
+      { code: 'E14', name: 'WRGCC E14', short: 'WRGCC' },
+      { code: 'E15', name: 'WRHCO E15', short: 'WRHCO' },
+      { code: 'E16', name: 'WRMM E16', short: 'WRMM' },
+      { code: 'E17', name: 'RR-KR3 JV E17', short: 'RR-KR3 JV' }
+    ];
+
+    // Standardized 13 Power GP Columns
     window.GP_TARGET_FIELDS = [
       'Department',
       'Journal Entry',
@@ -602,10 +586,6 @@
 300 - Logistics,20101,BOL-773410,Titan Freight Lines,2026-08-02,000-1500-00,Direct Freight Expense,26400.00,0.00,Intermodal Fleet Shipment,Bulk Material Dispatch,PMTRX000088,LOGISTICS_USER
 300 - Logistics,20101,BOL-773410,Titan Freight Lines,2026-08-02,000-2000-00,Accounts Payable,0.00,26400.00,Intermodal Fleet Shipment,Bulk Material Dispatch,PMTRX000088,LOGISTICS_USER`,
 
-      "RREDCO E05": `Department,Journal Entry,Invoice Number,Originating Master Name,TRX Date,Account Number,Account Description,Debit Amount,Credit Amount,Reference,Description,Originating TRX Source,User Who Posted
-400 - Energy Dev,30550,GE-INV-55102,General Electric Energy,2026-08-07,000-1700-00,Turbine Capital Assets,210000.00,0.00,RREDCO Phase 2 Turbine,Substation Equipment,GLTRX000019,ENGINEER_SYS
-400 - Energy Dev,30550,GE-INV-55102,General Electric Energy,2026-08-07,000-2000-00,Accounts Payable,0.00,210000.00,RREDCO Phase 2 Turbine,Substation Equipment,GLTRX000019,ENGINEER_SYS`,
-
       "WRGCC E14": `Department,Journal Entry,Invoice Number,Originating Master Name,TRX Date,Account Number,Account Description,Debit Amount,Credit Amount,Reference,Description,Originating TRX Source,User Who Posted
 500 - Commercial,40112,ESC-99201,SunTrust Operations,2026-08-11,000-1120-00,Commercial Escrow,94200.00,0.00,WRGCC Bond Guarantee,Surety Bond Release,GLTRX000045,TREASURY
 500 - Commercial,40112,ESC-99201,SunTrust Operations,2026-08-11,000-4100-00,Commercial Contracting,0.00,94200.00,WRGCC Bond Guarantee,Surety Bond Release,GLTRX000045,TREASURY`,
@@ -613,48 +593,6 @@
       "RR-KR3 JV E17": `Department,Journal Entry,Invoice Number,Originating Master Name,TRX Date,Account Number,Account Description,Debit Amount,Credit Amount,Reference,Description,Originating TRX Source,User Who Posted
 600 - Joint Venture,50220,KR3-CALL-008,KR3 Joint Ventures Corp,2026-08-14,000-1850-00,JV Investment Equity,350000.00,0.00,JV Capital Call Q3,Member Distribution Allocation,GLTRX000099,CFO_USER
 600 - Joint Venture,50220,KR3-CALL-008,KR3 Joint Ventures Corp,2026-08-14,000-1100-00,Operating Cash Acct,0.00,350000.00,JV Capital Call Q3,Member Distribution Allocation,GLTRX000099,CFO_USER`
-    };
-
-    window.appState = {
-      records: [],
-      filteredRecords: [],
-      locations: new Set(),
-      searchMode: 'omni', // 'omni' | 'single' | 'multi'
-      activeLocation: '',
-      omniQuery: '',
-      singleTargetKey: 'Journal Entry',
-      singleTargetVal: '',
-      multiFilters: {},
-      multiLogic: 'AND', // 'AND' | 'OR'
-      currentPage: 1,
-      pageSize: 50,
-      selectedRecord: null,
-      cloudConnected: false
-    };
-
-    // Realistic sample GL data mapped to the user's specific entities
-    const SAMPLE_LOCATION_DATA = {
-      "POMCO E01": `Department,Journal Entry,Originating Master Name,TRX Date,Account Number,Account Description,Debit Amount,Credit Amount,Reference,Description,Originating TRX Source,User Who Posted
-100 - Executive,10420,Apex Technical Solutions,2026-08-01,000-1100-00,Operating Cash Acct,85000.00,0.00,Q3 Working Capital,POMCO Intercompany Transfer,GLTRX000001,ADMIN
-100 - Executive,10420,Apex Technical Solutions,2026-08-01,000-1200-00,Accounts Receivable,0.00,85000.00,Q3 Working Capital,POMCO Intercompany Transfer,GLTRX000001,ADMIN
-200 - Management,10421,Deloitte Consulting,2026-08-04,000-6100-00,Professional Fees,14500.00,0.00,Audit Interim Review,Tax & Compliance Audit,PMTRX000034,AP_CLERK
-200 - Management,10421,Deloitte Consulting,2026-08-04,000-2000-00,Accounts Payable,0.00,14500.00,Audit Interim Review,Tax & Compliance Audit,PMTRX000034,AP_CLERK`,
-
-      "RRCLLC E02": `Department,Journal Entry,Originating Master Name,TRX Date,Account Number,Account Description,Debit Amount,Credit Amount,Reference,Description,Originating TRX Source,User Who Posted
-300 - Logistics,20101,Titan Freight Lines,2026-08-02,000-1500-00,Direct Freight Expense,26400.00,0.00,Intermodal Fleet Shipment,Bulk Material Dispatch,PMTRX000088,LOGISTICS_USER
-300 - Logistics,20101,Titan Freight Lines,2026-08-02,000-2000-00,Accounts Payable,0.00,26400.00,Intermodal Fleet Shipment,Bulk Material Dispatch,PMTRX000088,LOGISTICS_USER`,
-
-      "RREDCO E05": `Department,Journal Entry,Originating Master Name,TRX Date,Account Number,Account Description,Debit Amount,Credit Amount,Reference,Description,Originating TRX Source,User Who Posted
-400 - Energy Dev,30550,General Electric Energy,2026-08-07,000-1700-00,Turbine Capital Assets,210000.00,0.00,RREDCO Phase 2 Turbine,Substation Equipment,GLTRX000019,ENGINEER_SYS
-400 - Energy Dev,30550,General Electric Energy,2026-08-07,000-2000-00,Accounts Payable,0.00,210000.00,RREDCO Phase 2 Turbine,Substation Equipment,GLTRX000019,ENGINEER_SYS`,
-
-      "WRGCC E14": `Department,Journal Entry,Originating Master Name,TRX Date,Account Number,Account Description,Debit Amount,Credit Amount,Reference,Description,Originating TRX Source,User Who Posted
-500 - Commercial,40112,SunTrust Operations,2026-08-11,000-1120-00,Commercial Escrow,94200.00,0.00,WRGCC Bond Guarantee,Surety Bond Release,GLTRX000045,TREASURY
-500 - Commercial,40112,SunTrust Operations,2026-08-11,000-4100-00,Commercial Contracting,0.00,94200.00,WRGCC Bond Guarantee,Surety Bond Release,GLTRX000045,TREASURY`,
-
-      "RR-KR3 JV E17": `Department,Journal Entry,Originating Master Name,TRX Date,Account Number,Account Description,Debit Amount,Credit Amount,Reference,Description,Originating TRX Source,User Who Posted
-600 - Joint Venture,50220,KR3 Joint Ventures Corp,2026-08-14,000-1850-00,JV Investment Equity,350000.00,0.00,JV Capital Call Q3,Member Distribution Allocation,GLTRX000099,CFO_USER
-600 - Joint Venture,50220,KR3 Joint Ventures Corp,2026-08-14,000-1100-00,Operating Cash Acct,0.00,350000.00,JV Capital Call Q3,Member Distribution Allocation,GLTRX000099,CFO_USER`
     };
 
     function matchStandardField(rawHeader) {
@@ -671,7 +609,7 @@
       return rawHeader;
     }
 
-    // Auto-detect entity from file name (e.g. "POMCO_GL_2026.csv", "E14_Report.csv", "WRGCC_export.csv")
+    // Auto-detect entity from file name across all 17 companies
     function detectEntityFromFileName(filename) {
       if (!filename) return null;
       const upper = filename.toUpperCase();
@@ -682,7 +620,6 @@
         if (codePattern.test(upper)) {
           return ent.name;
         }
-
         // Match short name (e.g., "POMCO", "RRCLLC", "WRGCC", "RR-KR3")
         const cleanShort = ent.short.replace(/[^A-Z0-9]/gi, '');
         const cleanUpper = upper.replace(/[^A-Z0-9]/gi, '');
@@ -839,7 +776,7 @@
       if (filteredRecords.length === 0) {
         tbody.innerHTML = `
           <tr>
-            <td colspan="15" class="py-14 text-center text-slate-400">
+            <td colspan="16" class="py-14 text-center text-slate-400">
               <div class="flex flex-col items-center justify-center">
                 <i data-lucide="search-x" class="w-8 h-8 text-slate-300 mb-2"></i>
                 <p class="font-semibold text-slate-700 text-sm">No Matching Records Found</p>
@@ -1170,8 +1107,6 @@
           const data = docSnap.data();
           if (data && data.records && Array.isArray(data.records)) {
             data.records.forEach(r => cloudRecords.push(r));
-          } else if (data && data.Journal_Entry) {
-            cloudRecords.push(data);
           }
         });
 
